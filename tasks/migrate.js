@@ -40,6 +40,7 @@ module.exports = function(grunt) {
      * Migrate UP to either the latest migration file or to a migration name passed in as an argument.
      */
     function up(){
+        console.log(grunt.target);
         var key = (grunt.option('name') || ""),
             label = ( key || "EMPTY"),
             cmd = (migrateBinPath + " up " + key).trim();
