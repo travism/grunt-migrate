@@ -8,9 +8,6 @@
 module.exports = function(grunt) {
     'use strict';
 
-    // Make an empty dir for testing as git doesn't track empty folders.
-    grunt.file.mkdir('test/fixtures/empty_folder');
-
     // Project configuration.
     grunt.initConfig({
         jshint: {
@@ -36,7 +33,7 @@ module.exports = function(grunt) {
             create: "",
             down: "",
             options: {
-                binaryPath: process.env.PWD + "/node_modules/.bin/migrate"
+                binaryPath: process.env.PWD + "/node_modules/.bin/migrate" //Path to the migrate module
             }
         },
 
@@ -57,8 +54,8 @@ module.exports = function(grunt) {
 
     // Whenever the "test" task is run, first clean the "tmp" dir, then run this
     // plugin's task(s), then test the result.
-    //grunt.registerTask('test', ['clean', 'migrate', 'nodeunit']);
+    grunt.registerTask('test', ['clean','nodeunit']);
 
     // By default, lint and run all tests.
-    grunt.registerTask('default', ['clean', 'migrate']);
+    grunt.registerTask('default', ['migrate:up']);
 };
