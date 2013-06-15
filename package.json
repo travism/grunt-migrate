@@ -1,23 +1,23 @@
 {
     "name": "grunt-migrate",
-    "description": "Plugin the node migration framework in a grunt task that can easily be automated.",
+    "description": "Wrapper grunt task for the node-migrate module. Very handy if you are going to need a generic interface for your migrations and want to automate them.",
     "version": "0.0.1",
-    "homepage": "https://git.thinksolid.com/travis.mchattie/grunt-migrate",
+    "homepage": "https://github.com/travism/grunt-migrate",
     "author": {
         "name": "Travis McHattie",
         "url": "https://twitter.com/tjmchattie"
     },
     "repository": {
         "type": "git",
-        "url": "git@git.thinksolid.com:travis.mchattie/grunt-migrate.git"
+        "url": "git@github.com:travism/grunt-migrate.git"
     },
     "bugs": {
-        "url": "https://git.thinksolid.com/travis.mchattie/grunt-migrate/issues"
+        "url": "https://github.com/travism/grunt-migrate/issues"
     },
     "licenses": [
         {
             "type": "MIT",
-            "url": "https://git.thinksolid.com/travis.mchattie/grunt-migrate/blob/master/LICENSE-MIT"
+            "url": "https://github.com/travism/grunt-migrate/blob/master/LICENSE-MIT"
         }
     ],
     "main": "Gruntfile.js",
